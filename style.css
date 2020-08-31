@@ -1,0 +1,291 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Allows rem units to based on 16pt */
+html {
+    font-size: 16px;
+}
+
+/* Removes default bullets */
+ol,
+ul {
+    list-style: none;
+}
+
+
+body {
+    /* width: 68.75rem; */
+    /* 1100px */
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    /* background-repeat: repeat; */
+    /* background-size: cover; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.main-wrapper{
+
+    position: relative;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.main-wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(./assets/ChessAndSky.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    opacity: 0.1;
+  }
+
+#header {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: lightgreen;
+    box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* border style options: double, groove, ridge, inset, outset */
+.my-default-border {
+    border-width: 3px;
+    border-style: outset;
+    border-color: rgb(169, 211, 218);
+    border-radius: 10px;
+}
+
+.header-title {
+    font-family: 'Diplomata', cursive;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: rgb(82, 82, 54);
+    padding: 20px;
+}
+
+.header-title h1{
+    font-size: 50px;
+}
+
+#buttons-holder {
+    width: 68.75rem;
+    margin: 3rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.mybuttons {
+    width: 15.625rem;
+    min-height: 3rem;
+    /* margin-right: 1rem; */
+}
+
+#main {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sidebar {
+    margin-right: 5%;
+    min-width: 280px;
+}
+
+.sidebar h3{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.side-header {
+    padding: 10px 0 10px 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: lightgreen;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    flex: 1;
+    background-image: url('/StaticStoreFront/assets/DartBoard.jpg');
+    background-size: cover;
+}
+
+.video-wrap{
+    display: flex;
+}
+
+.video-wrap > div:first-child{
+    flex: 1;
+    height: 400px;
+    position: relative;
+}
+
+.play-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.play-button img{
+    max-width: 80px;
+    height: auto !important;
+}
+
+.video-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-wrap .sale{
+    min-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sale a{
+    font-size: 50px;
+    color: black;
+}
+
+.img-wrapper{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.img-wrapper h4{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.img-wrapper > div{
+    width: 30%;
+    margin: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-wrapper img{
+    width: 100%;
+    flex: 1;
+}
+
+.octagon2 {
+    width: 75px;
+    height: 75px;
+    background-color: blue;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.ul-list {
+    margin-top: 10px;
+    padding: 0 6px
+}
+
+.ul-list li {
+    line-height: 2rem;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.ul-list li a{
+    color: black;
+}
+
+.h4-align {
+    color: lightgreen;
+}
+
+.h4-align h4 {
+    line-height: 20px;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+p a {
+    color: rgb(135, 209, 222);
+}
+
+.video-title {
+    padding: 10px 0 10px 5px;
+    text-align: center;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+}
+
+.video-title img{
+    max-height: 35px;
+   margin: 0 6%;
+}
+
+.video-title h4{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.outer-poligon {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: black;
+    box-sizing: border-box;
+    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+}
+
+.inner-poligon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: black;
+    top: 2px;
+    /* equal to border thickness */
+    left: 2px;
+    /* equal to border thickness */
+    width: 120px;
+    /* container height - (border thickness * 2) */
+    height: 120px;
+    /* container height - (border thickness * 2) */
+    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+}
