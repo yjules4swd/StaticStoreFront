@@ -31,8 +31,8 @@ body {
 
 
 .main-wrapper{
-
     position: relative;
+    background: rgba(0, 0, 0, 0.301);
 }
 
 .position-relative{
@@ -57,7 +57,7 @@ body {
     display: block;
     width: 100%;
     padding: 1rem 0;
-    background-color: lightgreen;
+    background-color: rgba(0, 0, 0, 0.87);
     box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -78,7 +78,7 @@ body {
     margin: 0 auto 0 auto;
     justify-content: center;
     align-items: center;
-    color: rgb(82, 82, 54);
+    color: white;
     padding: 20px;
 }
 
@@ -87,18 +87,27 @@ body {
 }
 
 #buttons-holder {
-    width: 68.75rem;
-    margin: 3rem auto 0 auto;
+    max-width: 68.75rem;
+    width: 100%;
+    margin: 2rem auto 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
 
 }
 
 .mybuttons {
-    width: 15.625rem;
+    width: 25%;
     min-height: 3rem;
-    /* margin-right: 1rem; */
+    text-align: center;
+}
+
+.mybuttons h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.mybuttons h3 a{
+    color: black;
 }
 
 #main {
@@ -110,7 +119,10 @@ body {
 
 .sidebar {
     margin-right: 5%;
-    min-width: 280px;
+    width: 27%;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar h3{
@@ -129,8 +141,7 @@ body {
 
 .content {
     flex: 1;
-    background-image: url('/StaticStoreFront/assets/DartBoard.jpg');
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
 }
 
 .video-wrap{
@@ -152,11 +163,13 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
+    background-color: transparent;
 }
 
 .play-button img{
     max-width: 80px;
     height: auto !important;
+    cursor: pointer;
 }
 
 .video-wrap img{
@@ -174,7 +187,7 @@ body {
 
 .sale a{
     font-size: 50px;
-    color: black;
+    color: white;
 }
 
 .img-wrapper{
@@ -189,6 +202,11 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: 8px;
+    color: white;
+}
+
+.img-wrapper h4 a{
+    color: white;
 }
 
 .img-wrapper > div{
@@ -211,20 +229,53 @@ body {
 }
 
 .ul-list {
-    margin-top: 10px;
-    padding: 0 6px
+    padding: 20px 6px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .ul-list li {
-    line-height: 2rem;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-bottom: 30px;
-    color: black;
+    margin: 15px 0;
+    color: white;
 }
 
 .ul-list li a{
-    color: black;
+    color: white;
+    line-height: 2rem;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.yolo{
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+.yolo img{
+    border-radius: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.yolo-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yolo-text h3 a{
+    font-size: 75px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgreen;
+    text-shadow: 5px 5px black;
 }
 
 .h4-align {
